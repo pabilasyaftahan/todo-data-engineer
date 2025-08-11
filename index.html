@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Belajar Data Engineer 1 Bulan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            margin-bottom: 8px;
+            background: #ecf0f1;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        li.completed {
+            text-decoration: line-through;
+            background: #d4edda;
+        }
+        button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #27ae60;
+            color: white;
+        }
+        button:hover {
+            background-color: #219150;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>📅 To-Do List Belajar Data Engineer - 1 Bulan</h1>
+</header>
+
+<div class="container">
+    <ul id="todo-list">
+        <li><span>Hari 1 - SQL & Database Basics</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 2 - SQL Intermediate</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 3 - Python Basics</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 4 - Pandas Basics</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 5 - Linux CLI Basics</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 6 - Mini Project 1</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 7 - Review Minggu 1</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 8 - ETL Basics</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 9 - Data Transformation</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 10 - Load Data</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 11 - Apache Airflow Basics</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 12 - Airflow Transform & Load</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 13 - Mini Project 2</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 14 - Review Minggu 2</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 15 - Data Warehouse Concepts</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 16 - BigQuery Basics</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 17 - AWS S3 Basics</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 18 - PySpark Basics</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 19 - PySpark Transformation</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 20 - Mini Project 3</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 21 - Review Minggu 3</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 22 - Project Planning</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 23 - Extract</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 24 - Transform</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 25 - Load</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 26 - Orchestrator Integration</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 27 - Dashboarding</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 28 - Documentation</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 29 - Publication & CV</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+        <li><span>Hari 30 - Interview Practice</span> <button onclick="toggleComplete(this)">Selesai</button></li>
+    </ul>
+</div>
+
+<script>
+function toggleComplete(button) {
+    const li = button.parentElement;
+    li.classList.toggle('completed');
+}
+</script>
+
+</body>
+</html>
